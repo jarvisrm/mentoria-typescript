@@ -2,9 +2,8 @@ const button = document.getElementById('button');
 const input1 = document.getElementById('input1') as HTMLInputElement;
 const input2 = document.getElementById('input2') as HTMLInputElement;
 
-/**
- * Exemplo de função com parâmetros tipados
- */
+//Exemplo de função com parâmetros tipados
+ 
 function somaValidaComPrint(numero1: number, numero2: number, printarResultado: boolean, frase: string) { 
     const resultado = numero1 + numero2;
     if (printarResultado) {

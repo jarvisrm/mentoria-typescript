@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="dist/app.js" defer></script>
+    <title>Desafio TypeScript</title>
+    <style>
+        h3 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <input id="input1">
-    <input id="input2">
-    <button id="button">Clique aqui</button>
+    <section>
+        <h1><i>TypeScript</i></h1>
+        <h3>Primeiro teste</h3>
+        <input id="input1" placeholder="Número 1">
+        <input id="input2" placeholder="Número 2">
+        <button id="button">Clique aqui</button>
+        <button type="reset" id="button2">Limpar dados</button>
+    </section>
+    <p></p>
+    <section>
+        <h3>Segundo teste (Desafio 3)</h3>
+        <h4>Valor a ser adicionado: <input id="soma" placeholder="Quanto somar?"></h4>
+        <button id="atualizar-saldo">Atualizar saldo</button>
+        <button id="limpar-saldo">Limpar seu saldo</button>
+        <h1>Seu saldo é: <span id="campo-saldo"></span>.</h1>
+    </section>
+    <h1 style="color: darkblue; background-color:lightblue">Encontre seu Filme (Desafio 4)</h1>
+    <div style="display: flex;">
+        <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+            <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+            <button id="login-button" disabled>Login</button>
+        </div>
+        <div id="search-container" style="margin-left: 20px">
+            <input id="search" placeholder="Digite o nome">
+            <button id="search-button">Pesquisar Filme</button>
+        </div>
+    </div>
+    <script type="module" src="/dist/app.js" defer></script>
 </body>
 </html>
